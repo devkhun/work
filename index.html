@@ -3,8 +3,33 @@
 <head>
     <title>CHU JI HYUN</title>
     <link rel="stylesheet" type="text/css" href="/work/assets/fullPage/jquery.fullPage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="/work/assets/jquery.min.js"></script>
+    <script src="/work/assets/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/work/assets/fullPage/jquery.fullPage.js"></script>
 </head>
+
+<body>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+            });
+        });
+    </script>
+
+    <div id="fullpage">
+        <div class="section active" id="section0"><h1>fullPage.js</h1></div>
+        <div class="section" id="section1">
+            <div class="slide "><h1>Simple Demo</h1></div>
+            <div class="slide active"><h1>Only text</h1></div>
+            <div class="slide"><h1>And text</h1></div>
+            <div class="slide"><h1>And more text</h1></div>
+        </div>
+        <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+        <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+    </div>
+
+</body>
+
 </html>
